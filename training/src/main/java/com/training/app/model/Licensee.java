@@ -10,6 +10,7 @@ public class Licensee {
 	private ArrayList<Car> cars;
 	private ArrayList<Motorcycle> motors;
 	private ArrayList<Ship> ships;
+	private ArrayList<Vehicle> vehicles;
 	private CreateCar createCar;
 	private CreateMotorcycle createMotorcycle;
 	private CreateShip createShip;
@@ -23,6 +24,7 @@ public class Licensee {
 		this.createCar=createCar;
 		this.createMotorcycle=createMotorcycle;
 		this.createShip=createShip;
+		vehicles = new ArrayList<Vehicle>();
 	}
 
 	public ArrayList<Car> getCars() {
@@ -71,6 +73,14 @@ public class Licensee {
 
 	public void setCreateShip(CreateShip createShip) {
 		this.createShip = createShip;
+	}
+
+	public ArrayList<Vehicle> getVehicles() {
+		return vehicles;
+	}
+
+	public void setVehicles(ArrayList<Vehicle> vehicles) {
+		this.vehicles = vehicles;
 	}
 	
 	
