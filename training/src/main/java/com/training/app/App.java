@@ -1,7 +1,6 @@
 package com.training.app;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 import com.training.app.model.Car;
 import com.training.app.model.CreateCar;
@@ -12,10 +11,6 @@ import com.training.app.model.Motorcycle;
 import com.training.app.model.Ship;
 import com.training.app.model.Vehicle;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args ) {
