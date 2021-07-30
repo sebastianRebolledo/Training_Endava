@@ -2,8 +2,11 @@ package com.training.app.model;
 
 public class CreateCar {
 	
-	public void registerCar(String plate, String color, String brand, int modelo, int type){
-		Car newCar= new Car(plate, color, brand, modelo, type);
+private Licensee licensee;
+	
+	public void registerCar(String price, String color, String brand, String licensePlate, int type,boolean airbags){
+		Car car = new Car(price, color, brand, licensePlate, type,airbags);
+		licensee.getCars().add(car);
 	}
 
 }

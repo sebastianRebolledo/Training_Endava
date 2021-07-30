@@ -1,5 +1,5 @@
 package com.training.app.model;
 
-public class SportCar {
+public class Ship {
 
 }
