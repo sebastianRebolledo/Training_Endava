@@ -1,6 +1,8 @@
 package com.training.app.model;
 
-public class LandVehicle extends Vehicle {
+
+
+public class LandVehicle extends Vehicle  {
 	
 	public static final int GAS=1;
 	public static final int ELECTRIC=1;
@@ -18,7 +20,6 @@ public class LandVehicle extends Vehicle {
 		this.type = type;
 	}
 
-	
 	
 
 

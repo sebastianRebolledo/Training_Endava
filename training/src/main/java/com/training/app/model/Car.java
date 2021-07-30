@@ -1,9 +1,13 @@
 package com.training.app.model;
 
+import com.ttraining.app.interfaces.ISpeedUp;
+import com.ttraining.app.interfaces.ITurnOff;
+import com.ttraining.app.interfaces.ITurnOn;
+
 import lombok.Data;
 
 
-public class Car extends LandVehicle{
+public class Car extends LandVehicle implements ITurnOn,ITurnOff,ISpeedUp{
 
 	
 	private boolean airbags;
@@ -19,6 +23,22 @@ public class Car extends LandVehicle{
 		this.airbags = airbags;
 	}
 	
+	
+	@Override
+	public void speedUp() {
+		System.out.println("The car has sped up");
+		
+	}
+	@Override
+	public void turnOffVehicle() {
+		System.out.println("The Vehicle turned off");
+		
+	}
+	@Override
+	public void turnOnVehicle() {
+		System.out.println("The Vehicle has been started");
+		
+	}
 	
 	
 

@@ -1,6 +1,10 @@
 package com.training.app.model;
 
-public class Motorcycle extends LandVehicle {
+import com.ttraining.app.interfaces.ISpeedUp;
+import com.ttraining.app.interfaces.ITurnOff;
+import com.ttraining.app.interfaces.ITurnOn;
+
+public class Motorcycle extends LandVehicle implements ITurnOn,ITurnOff,ISpeedUp {
 
 	private boolean direction;
 	public Motorcycle(String price, String color, String brand, String licensePlate, int type,boolean direction) {
@@ -13,6 +17,23 @@ public class Motorcycle extends LandVehicle {
 	}
 	public void setDirection(boolean direction) {
 		this.direction = direction;
+	}
+
+	
+	@Override
+	public void speedUp() {
+		System.out.println("The car has sped up");
+		
+	}
+	@Override
+	public void turnOffVehicle() {
+		System.out.println("The Vehicle turned off");
+		
+	}
+	@Override
+	public void turnOnVehicle() {
+		System.out.println("The Vehicle has been started");
+		
 	}
 
 	

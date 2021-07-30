@@ -42,16 +42,6 @@ public class Vehicle {
 	}
 	
 
-	public void turnOnVehicle() {
-		System.out.println("The car started");
-	}
-	
-	public void turnOffVehicle() {
-		System.out.println("The car turned off");
-	}
-	
-	public void speedUp() {
-		System.out.println("The car has sped up");
-	}
+
 	
 }
